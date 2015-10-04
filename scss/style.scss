@@ -51,6 +51,7 @@ nav ul li{
 .home{
 	background-color:$secondary-color; 
 	overflow:hidden;
+	position:relative;
 }
 
 
@@ -70,7 +71,7 @@ nav ul li{
 	top:0;
 	width: 0; 
   	height: 0; 
-  	border-top: 752px solid $primary-color; 
+  	border-top: 952px solid $primary-color; 
   	border-right: 100px solid transparent;
 }
 

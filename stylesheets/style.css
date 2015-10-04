@@ -40,7 +40,8 @@ nav ul li {
 
 .home {
   background-color: #FCAD56;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 .sidebar {
   height: 100%;
@@ -57,5 +58,5 @@ nav ul li {
   top: 0;
   width: 0;
   height: 0;
-  border-top: 752px solid #E84646;
+  border-top: 952px solid #E84646;
   border-right: 100px solid transparent; }
