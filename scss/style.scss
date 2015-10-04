@@ -14,10 +14,17 @@ $secondary-color	: #FCAD56;
 ////////////////////////////////
 //   Typography   /////////////
 ///////////////////////////////
-$baseline			: 16px;
+$baseline			: 14px;
 $leading			: 1.5;
 $font-primary		: 'Source Sans Pro', sans-serif;
 $font-secondary		: 'Varela Round', sans-serif;
+
+
+
+////////////////////////////////
+//   Mixins   /////////////////
+///////////////////////////////
+@mixin transition{-webkit-transition: .2s all;-moz-transition: .2s all;-ms-transition: .2s all;-o-transition: .2s all;transition: .2s all;}
 
 
 
@@ -38,8 +45,38 @@ nav{
 	height:80px;
 }
 
+.nav-logo{
+	display:inline;
+	position:absolute;
+	right:850px;
+	width:80px;
+	margin-top:20px;
+}
+
+nav ul{
+	display:inline-block;
+	position:absolute;
+	right:45px;
+}
+
 nav ul li{
 	display:inline-block;
+	line-height:80px;
+	margin:0 20px;
+}
+
+nav ul li a{
+	color:#AFAFAF;
+	font-family:$font-secondary;
+	@include transition;
+}
+
+nav ul li a:hover{
+	color:$primary-color;
+}
+
+.menu-slash{
+	color:$primary-color;
 }
 
 .section{
@@ -77,8 +114,28 @@ nav ul li{
 	left:0; 
 	z-index:999;
 	-webkit-transform: rotate(7deg);
-	box-shadow:1px 5px 5px 1px rgba(0,0,0,0.3);
+	box-shadow:0 3px 4px rgba(0,0,0,0.5);
 
+
+}
+
+.more-btn{
+	background-color:white;
+	box-shadow:0 2px 6px rgba(0,0,0,0.3);
+	position:absolute;
+	bottom:45px;
+	right:45px;
+	width:60px;
+	height:60px;
+	z-index:999;
+	border-radius:50%;
+	text-align:center;
+}
+
+.more-btn a{
+	line-height:60px;
+	color:$primary-color;
+	font-weight:800;
 }
 
 
