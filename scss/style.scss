@@ -1,3 +1,27 @@
+////////////////////////////////
+//   Typography import  ////////
+////////////////////////////////
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Varela+Round);
+
+
+////////////////////////////////
+//   Color Palette  ////////////
+////////////////////////////////
+$primary-color		: #E84646;
+$secondary-color	: #FCAD56;
+
+
+////////////////////////////////
+//   Typography   /////////////
+///////////////////////////////
+$baseline			: 16px;
+$leading			: 1.5;
+$font-primary		: 'Source Sans Pro', sans-serif;
+$font-secondary		: 'Varela Round', sans-serif;
+
+
+
+
 body{
-	background-color:red;
+	background-color:$secondary-color;
 }
