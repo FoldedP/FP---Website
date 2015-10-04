@@ -7,7 +7,7 @@ html {
 body {
   height: 100%;
   min-height: 100%;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Source Sans Pro", sans-serif; }
 
 .columns {
@@ -29,8 +29,37 @@ nav {
   background-color: white;
   height: 80px; }
 
+.nav-logo {
+  display: inline;
+  position: absolute;
+  right: 850px;
+  width: 80px;
+  margin-top: 20px; }
+
+nav ul {
+  display: inline-block;
+  position: absolute;
+  right: 45px; }
+
 nav ul li {
-  display: inline-block; }
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 20px; }
+
+nav ul li a {
+  color: #AFAFAF;
+  font-family: "Varela Round", sans-serif;
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all; }
+
+nav ul li a:hover {
+  color: #E84646; }
+
+.menu-slash {
+  color: #E84646; }
 
 .section {
   height: 100%;
@@ -64,4 +93,21 @@ nav ul li {
   left: 0;
   z-index: 999;
   -webkit-transform: rotate(7deg);
-  box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5); }
+
+.more-btn {
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  bottom: 45px;
+  right: 45px;
+  width: 60px;
+  height: 60px;
+  z-index: 999;
+  border-radius: 50%;
+  text-align: center; }
+
+.more-btn a {
+  line-height: 60px;
+  color: #E84646;
+  font-weight: 800; }
