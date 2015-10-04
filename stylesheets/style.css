@@ -53,13 +53,20 @@ nav ul li a {
   -moz-transition: .2s all;
   -ms-transition: .2s all;
   -o-transition: .2s all;
-  transition: .2s all; }
+  transition: .2s all;
+  font-size: 14px; }
 
 nav ul li a:hover {
   color: #E84646; }
 
 .menu-slash {
-  color: #E84646; }
+  color: #E84646;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 .section {
   height: 100%;
