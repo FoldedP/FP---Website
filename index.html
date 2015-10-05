@@ -23,21 +23,28 @@
     <div class="section home">
 
     <div id="video-container">
-		<video autoplay controls="true" class="fillWidth" id="video1">
+		<video autoplay class="fillWidth" id="video1">
 			<source src="movie/animatie.mp4" type="video/mp4"/>
 			Your browser does not support the video tag. I suggest you upgrade your browser.
 		</video>
 	</div><!-- end video-container -->
       
       <div class="sidebar">
-        <img class="home-logo" src="img/logo/logo.svg" alt="">      
+        <!-- <img class="home-logo" src="img/logo/logo.svg" alt="">    -->   
+        <video autoplay class="home-logo" id="video1">
+      <source src="movie/logo2.mov" type="video/mp4"/>
+      <source src="movie/logo.mp4" type="video/mp4"/>
+      Your browser does not support the video tag. I suggest you upgrade your browser.
+    </video>
       </div>
 
       <div class="home-background"> 
       </div>
 
-      <div class="more-btn">
-        <a href="">+</a>
+      <div class="more-btn-div">
+        <a href=""><div class="more-btn">
+          <p>+</p>
+        </div></a>
       </div>
 
     </div>
@@ -52,6 +59,27 @@
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
+$(document).ready(function(){
+    var hiddenDiv = $("nav");
+    var show = function() {
+            hiddenDiv.fadeIn();
+    };
+
+hiddenDiv.hide();
+ setTimeout(show, 500);   
+        
+});
+
+$(document).ready(function(){
+    var hiddenDiv = $(".more-btn-div");
+    var show = function() {
+            hiddenDiv.fadeIn();
+    };
+
+hiddenDiv.hide();
+ setTimeout(show, 1200);   
+        
+});
     </script>
 
   </body>
