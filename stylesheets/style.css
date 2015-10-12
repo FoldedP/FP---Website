@@ -8,7 +8,8 @@ body {
   height: 100%;
   min-height: 100%;
   font-size: 14px;
-  font-family: "Source Sans Pro", sans-serif; }
+  font-family: "Source Sans Pro", sans-serif;
+  overflow: scroll; }
 
 .columns {
   padding: 0;
@@ -58,6 +59,7 @@ nav ul li {
 nav ul li a {
   color: #AFAFAF;
   font-family: "Varela Round", sans-serif;
+  font-size: 14px;
   -webkit-transition: .2s all;
   -moz-transition: .2s all;
   -ms-transition: .2s all;
@@ -155,7 +157,7 @@ nav ul li a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(252, 173, 86, 0.5);
+  background-color: rgba(252, 173, 86, 0.3);
   z-index: 997; }
 
 .video-container {
