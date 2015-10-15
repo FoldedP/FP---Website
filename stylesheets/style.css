@@ -1,4 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Varela+Round);
+/* even extra STAN */
+.column + .column:last-child, .columns + .column:last-child, .column + .columns:last-child, .columns + .columns:last-child {
+  float: left !important; }
+
 html {
   text-rendering: optimizeLegibility;
   height: 100%;
@@ -11,12 +15,15 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   overflow: scroll; }
 
+p {
+  margin-bottom: 0 !important; }
+
 .columns {
   padding: 0;
   margin: 0; }
 
 .row {
-  max-width: 100%;
+  width: 100%;
   height: 100%; }
 
 .clear {
@@ -27,7 +34,7 @@ nav {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  position: absolute;
+  position: fixed;
   z-index: 998;
   top: 0;
   width: 100%;
@@ -195,3 +202,169 @@ nav ul li a:hover {
   line-height: 60px;
   color: #E84646;
   font-weight: 800; }
+
+.hoe-wat {
+  padding: 20px 0; }
+
+.hoe-wat-header h1 {
+  margin-top: 100px;
+  color: #E84646;
+  font-family: "Varela Round", sans-serif;
+  font-size: bold; }
+
+.hoe-wat-header p {
+  width: 100%;
+  color: #AFAFAF; }
+
+.box-items-whatwedo {
+  margin: 0 auto;
+  margin-top: 50px; }
+
+.whatwedo-box {
+  position: relative;
+  width: 250px;
+  height: 280px;
+  overflow: hidden;
+  margin: 5px 30px;
+  border: solid 1px #EDEDED;
+  background-color: #E84646;
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 3px; }
+
+.whatwedo-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: transparent; }
+
+.whatwedo-cover:hover ~ .whatwedo-cover-left {
+  left: -170px;
+  -webkit-transition: .5s all;
+  -moz-transition: .5s all;
+  -ms-transition: .5s all;
+  -o-transition: .5s all;
+  transition: .5s all;
+  animation-delay: .3s; }
+
+.whatwedo-cover:hover ~ .whatwedo-cover-right {
+  right: -170px;
+  -webkit-transition: .5s all;
+  -moz-transition: .5s all;
+  -ms-transition: .5s all;
+  -o-transition: .5s all;
+  transition: .5s all; }
+
+.whatwedo-cover:hover ~ .items-icon img {
+  margin-top: -200px;
+  -webkit-transition: .5s all;
+  -moz-transition: .5s all;
+  -ms-transition: .5s all;
+  -o-transition: .5s all;
+  transition: .5s all; }
+
+.whatwedo-cover:hover ~ .items-heading {
+  margin-bottom: -70px;
+  -webkit-transition: .5s all;
+  -moz-transition: .5s all;
+  -ms-transition: .5s all;
+  -o-transition: .5s all;
+  transition: .5s all; }
+
+.whatwedo-cover-left {
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  z-index: 2;
+  height: 350px;
+  width: 150px;
+  background-color: white;
+  -webkit-transition: .5s all;
+  -moz-transition: .5s all;
+  -ms-transition: .5s all;
+  -o-transition: .5s all;
+  transition: .5s all;
+  -webkit-transform: rotate(7deg);
+  -moz-transform: rotate(7deg);
+  -o-transform: rotate(7deg);
+  transform: rotate(7deg); }
+
+.whatwedo-cover-right {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  z-index: 2;
+  background-color: white;
+  height: 350px;
+  width: 150px;
+  -webkit-transition: .5s all;
+  -moz-transition: .5s all;
+  -ms-transition: .5s all;
+  -o-transition: .5s all;
+  transition: .5s all;
+  -webkit-transform: rotate(7deg);
+  -moz-transform: rotate(7deg);
+  -o-transform: rotate(7deg);
+  transform: rotate(7deg); }
+
+.items-heading {
+  max-width: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: 40px;
+  left: 30%;
+  z-index: 3;
+  text-align: center;
+  color: #FCAD56;
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.2em;
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all; }
+
+.items-icon img {
+  max-width: 100px;
+  width: 100px;
+  position: absolute;
+  z-index: 3;
+  top: 75px;
+  left: 75px;
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all; }
+
+.slash {
+  font-size: 18em;
+  position: absolute;
+  top: 1%;
+  left: -10%;
+  color: rgba(0, 0, 0, 0.1) !important;
+  font-weight: 200; }
+
+.item-whatwedo-below {
+  margin-top: 80px;
+  height: 200px;
+  width: 250px;
+  z-index: 1; }
+
+.item-whatwedo-below p {
+  max-width: 92%;
+  margin-left: 4%;
+  text-align: center;
+  font-size: 1em;
+  color: white;
+  line-height: 21px; }
+
+.item-whatwedo-below h1 {
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  margin: 10px 0 20px 0;
+  color: white;
+  font-size: 1.3em;
+  line-height: 21px; }

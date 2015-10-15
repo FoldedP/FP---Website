@@ -22,6 +22,72 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/animatie.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11144,
+		"inputAbbreviatedPath": "\/img\/animatie.png",
+		"outputAbbreviatedPath": "\/img\/animatie.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/concepting.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10802,
+		"inputAbbreviatedPath": "\/img\/concepting.png",
+		"outputAbbreviatedPath": "\/img\/concepting.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/fotografie.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17648,
+		"inputAbbreviatedPath": "\/img\/fotografie.png",
+		"outputAbbreviatedPath": "\/img\/fotografie.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/grafischdesign.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16493,
+		"inputAbbreviatedPath": "\/img\/grafischdesign.png",
+		"outputAbbreviatedPath": "\/img\/grafischdesign.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/strategie.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11547,
+		"inputAbbreviatedPath": "\/img\/strategie.png",
+		"outputAbbreviatedPath": "\/img\/strategie.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/webdesign.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9649,
+		"inputAbbreviatedPath": "\/img\/webdesign.png",
+		"outputAbbreviatedPath": "\/img\/webdesign.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
