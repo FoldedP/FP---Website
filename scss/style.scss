@@ -3,6 +3,8 @@
 ////////////////////////////////
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Varela+Round);
 
+@import url("//hello.myfonts.net/count/25b8af");
+
 
 ////////////////////////////////
 //   Color Palette  ////////////
@@ -17,7 +19,8 @@ $secondary-color	: #FCAD56;
 $baseline			: 14px;
 $leading			: 1.5;
 $font-primary		: 'Source Sans Pro', sans-serif;
-$font-secondary		: 'Varela Round', sans-serif;
+$font-secondary		: 'ProximaNovaSoft-Semibold';
+$font-primary-rounded		: 'ProximaNovaSoft-regular';
 
 
 
@@ -27,6 +30,7 @@ $font-secondary		: 'Varela Round', sans-serif;
 @mixin transition{-webkit-transition: .2s all;-moz-transition: .2s all;-ms-transition: .2s all;-o-transition: .2s all;transition: .2s all;}
 @mixin transition-slow{-webkit-transition: .5s all;-moz-transition: .5s all;-ms-transition: .5s all;-o-transition: .5s all;transition: .5s all;}
 @mixin transition-fast{-webkit-transition: .1s all;-moz-transition: .1s all;-ms-transition: .1s all;-o-transition: .1s all;transition: .1s all;}
+@mixin centered{position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);-o-transform: translate(-50%, -50%);transform: translate(-50%, -50%);}
 
 /* even extra STAN */
 
@@ -36,35 +40,57 @@ $font-secondary		: 'Varela Round', sans-serif;
 
 
 html{text-rendering: optimizeLegibility; height:100%; min-height:100%;}
-body{height:100%; min-height:100%; font-size:$baseline; font-family:$font-primary; overflow:scroll;}
+body{height:100%; min-height:100%; font-size:$baseline; font-family:$font-primary;}
 p{margin-bottom: 0!important;}
 
 .columns{padding:0; margin:0;}
-.row{width:100%;height:100%; }
+.row{width:100%;height:100%; max-width:100%; }
 .clear{clear:both;}
 
-nav{
+#navigation{
 	-webkit-user-select: none;  
   	-moz-user-select: none;     
   	-ms-user-select: none;      
   	user-select: none;   
-	position:fixed;
+	position:absolute;
 	z-index:998; 
 	top:0; 
 	width:100%; 
 	background-color:white; 
 	height:80px;
-	box-shadow:1px 2px 3px rgba(0,0,0,0.25);
+	box-shadow:1px 1px 1px rgba(0,0,0,0.25);
 	-webkit-animation: navigation-slidein .3s  cubic-bezier(0.645, 0.045, 0.355, 1.000);
 	-moz-animation: navigation-slidein .3s  cubic-bezier(0.645, 0.045, 0.355, 1.000);
 	-o-animation: navigation-slidein .3s  cubic-bezier(0.645, 0.045, 0.355, 1.000);
 	animation: navigation-slidein .3s  cubic-bezier(0.645, 0.045, 0.355, 1.000);
+	@include transition-slow;
+}
+
+#navigation.active{ 
+	position: fixed !important; 
+	top: 0;
+	bottom: 0;
+	height: 80px;
+	background: white;
+	-webkit-animation: navigation-slidein .3s  cubic-bezier(0.645, 0.045, 0.355, 1.000);
+	-moz-animation: navigation-slidein .3s  cubic-bezier(0.645, 0.045, 0.355, 1.000);
+	-o-animation: navigation-slidein .3s  cubic-bezier(0.645, 0.045, 0.355, 1.000);
+	animation: navigation-slidein .3s  cubic-bezier(0.645, 0.045, 0.355, 1.000);
+	@include transition-slow;
 }
 
 .nav-logo{
 	display:inline;
 	position:absolute;
 	right:850px;
+	width:80px;
+	margin-top:20px;
+}
+
+.nav-logo.active{
+	display:inline;
+	position:absolute;
+	left:45px;
 	width:80px;
 	margin-top:20px;
 }
@@ -186,7 +212,7 @@ nav ul li a:hover{
 	position: absolute;
 	top:0;
 	left: 0;
-	background-color: rgba($secondary-color, 0.3);
+	background-color: rgba(75,75,75, 0.50);
 	z-index: 997;
 }
 
@@ -233,39 +259,20 @@ nav ul li a:hover{
 }
 
 
-.hoe-wat{
-	padding:20px 0;
-}
-
-
-
-.hoe-wat-header h1{
-	margin-top: 100px;
-	color: $primary-color;
-	font-family:$font-secondary;
-	font-size: bold;
-}
-
-.hoe-wat-header p{
-	width: 100%;
-	color: #AFAFAF;
-}
 
 .box-items-whatwedo{
 	margin: 0 auto;
-	margin-top: 50px;
 }
 
 .whatwedo-box{
 	position: relative;
-	width: 250px;
-	height: 280px;
+	width: 33.3%;
+	height: 300px;
 	overflow: hidden;
-	margin:5px 30px;
-	border:solid 1px #EDEDED;
-	background-color:$primary-color;
-	box-shadow:0 0px 3px rgba(0,0,0,0.1);
-	border-radius:3px;
+	margin:0;
+	border:solid 1px #F4F4F4;
+	background-color:$secondary-color;
+	box-sizing:border-box;
 }
 
 .whatwedo-cover{
@@ -280,23 +287,25 @@ nav ul li a:hover{
 
 
 .whatwedo-cover:hover ~ .whatwedo-cover-left{
-	left:-170px;
+	left:-370px;
 	@include transition-slow;
 	animation-delay:.3s;
 }
 
 .whatwedo-cover:hover ~ .whatwedo-cover-right{
-	right:-170px;
+	right:-370px;
 	@include transition-slow;
 }
 
+
 .whatwedo-cover:hover ~ .items-icon img{
-	margin-top:-200px;
+	margin:-50px auto 0 10%;
+	width:100px;
 	@include transition-slow;
 }
 
 .whatwedo-cover:hover ~ .items-heading{
-	margin-bottom:-70px;
+	margin-top:280px;
 	@include transition-slow;
 }
 
@@ -307,7 +316,7 @@ nav ul li a:hover{
 	left: -25px;
 	z-index:2;
 	height: 350px;
-	width: 150px;
+	width: 350px;
 	background-color: white;
 	@include transition-slow;	
 	-webkit-transform: rotate(7deg);
@@ -323,7 +332,7 @@ nav ul li a:hover{
 	z-index:2;
 	background-color: white;
 	height: 350px;
-	width: 150px;
+	width: 350px;
 	@include transition-slow;
 	-webkit-transform: rotate(7deg);
   	-moz-transform: rotate(7deg);
@@ -333,58 +342,56 @@ nav ul li a:hover{
 }
 
 .items-heading{
-	max-width:100px;
+	max-width:150px;
 	width:100px;
-	position: absolute;
-	bottom:40px;
-	left:30%;
+	margin:120px auto 0 auto;
+	position:relative;
 	z-index:3;
 	text-align:center;
 	color:$secondary-color;
 	font-family:$font-secondary;
-	font-size:1.2em;
+	text-transform:uppercase;
+	font-size:1em;
 	@include transition;
+}
+
+.items-icon{
+	max-width:120px;
+	margin:0 auto;
 }
 
 .items-icon img{
-	max-width:100px;
-	width:100px;
-	position: absolute;
+	max-width:120px;
+	width:100%;
+	position: relative;
 	z-index:3;
 	top:75px;
-	left:75px;
 	@include transition;
 }
 
-.slash{
-	font-size: 18em;
-	position: absolute;
-	top:1%;
-	left: -10%;
-	color: rgba(0,0,0,0.1) !important;
-	font-weight:200;
-
-}
-
 .item-whatwedo-below{
-	margin-top:80px;
-	height: 200px;
-	width: 250px;
+	height: 100px;
+	width: 100%;
 	z-index: 1;
+	@include centered;
 }
+
 
 .item-whatwedo-below p{
-	max-width:92%;
-	margin-left:4%;
 	text-align:center;
-	font-size:1em;
+	max-width:90%;
+	margin-left:5%;
 	color:white;
 	line-height:21px;
+	font-family:$font-primary-rounded;
 }
+
+
 .item-whatwedo-below h1{
+	margin-top:30px;
 	font-family:$font-secondary;
+	text-transform:uppercase;
 	text-align:center;
-	margin:10px 0 20px 0;
 	color:white;
 	font-size:1.3em;
 	line-height:21px;

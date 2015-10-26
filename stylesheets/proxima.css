@@ -1,0 +1,32 @@
+/* @license
+ * MyFonts Webfont Build ID 2472111, 2013-02-06T09:48:19-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Proxima Nova Soft Semibold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova-soft/semibold/
+ * 
+ * Webfont: Proxima Nova Soft Regular by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova-soft/regular/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2472111
+ * Webfonts copyright: Copyright (c) Mark Simonson, 2010. All rights reserved.
+ * 
+ * © 2013 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/25b8af");
+
+  
+@font-face {font-family: 'ProximaNovaSoft-Semibold';src: url('webfonts/25B8AF_0_0.eot');src: url('webfonts/25B8AF_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/25B8AF_0_0.woff') format('woff'),url('webfonts/25B8AF_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ProximaNovaSoft-Regular';src: url('webfonts/25B8AF_1_0.eot');src: url('webfonts/25B8AF_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/25B8AF_1_0.woff') format('woff'),url('webfonts/25B8AF_1_0.ttf') format('truetype');}
+ 
