@@ -232,6 +232,16 @@ nav ul li a:hover {
   color: #E84646;
   font-weight: 800; }
 
+.hoe-wat-header {
+  background-color: white; }
+
+.hoe-wat-header h1 {
+  padding: 30px 0;
+  text-align: center;
+  font-family: "ProximaNovaSoft-regular";
+  color: #E84646;
+  font-size: 24px; }
+
 .box-items-whatwedo {
   margin: 0 auto; }
 
@@ -241,8 +251,8 @@ nav ul li a:hover {
   height: 300px;
   overflow: hidden;
   margin: 0;
-  border: solid 1px #F4F4F4;
-  background-color: #FCAD56;
+  border: solid .5px #F4F4F4;
+  background-color: #E84646;
   box-sizing: border-box; }
 
 .whatwedo-cover {
@@ -271,9 +281,17 @@ nav ul li a:hover {
   -o-transition: .5s all;
   transition: .5s all; }
 
-.whatwedo-cover:hover ~ .items-icon img {
+.whatwedo-cover:hover ~ .items-icon svg {
   margin: -50px auto 0 10%;
   width: 100px;
+  -webkit-transition: .5s all;
+  -moz-transition: .5s all;
+  -ms-transition: .5s all;
+  -o-transition: .5s all;
+  transition: .5s all; }
+
+.whatwedo-cover:hover ~ .items-icon .icon-color {
+  stroke: white !important;
   -webkit-transition: .5s all;
   -moz-transition: .5s all;
   -ms-transition: .5s all;
@@ -327,7 +345,7 @@ nav ul li a:hover {
 .items-heading {
   max-width: 150px;
   width: 100px;
-  margin: 120px auto 0 auto;
+  margin: -30px auto 0 auto;
   position: relative;
   z-index: 3;
   text-align: center;
@@ -345,12 +363,11 @@ nav ul li a:hover {
   max-width: 120px;
   margin: 0 auto; }
 
-.items-icon img {
+.items-icon svg {
   max-width: 120px;
   width: 100%;
   position: relative;
   z-index: 3;
-  top: 75px;
   -webkit-transition: .2s all;
   -moz-transition: .2s all;
   -ms-transition: .2s all;
@@ -371,6 +388,7 @@ nav ul li a:hover {
 
 .item-whatwedo-below p {
   text-align: center;
+  font-size: 14px;
   max-width: 90%;
   margin-left: 5%;
   color: white;
@@ -382,6 +400,6 @@ nav ul li a:hover {
   font-family: "ProximaNovaSoft-Semibold";
   text-transform: uppercase;
   text-align: center;
-  color: white;
+  color: #FCAD56;
   font-size: 1.3em;
   line-height: 21px; }
