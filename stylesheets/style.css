@@ -1,9 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Varela+Round);
 @import url("//hello.myfonts.net/count/25b8af");
-/* even extra STAN */
-.column + .column:last-child, .columns + .column:last-child, .column + .columns:last-child, .columns + .columns:last-child {
-  float: left !important; }
-
 html {
   text-rendering: optimizeLegibility;
   height: 100%;
@@ -15,9 +11,6 @@ body {
   font-size: 14px;
   font-family: "Source Sans Pro", sans-serif; }
 
-p {
-  margin-bottom: 0 !important; }
-
 .columns {
   padding: 0;
   margin: 0; }
@@ -26,6 +19,9 @@ p {
   width: 100%;
   height: 100%;
   max-width: 100%; }
+
+.column + .column:last-child, .columns + .column:last-child, .column + .columns:last-child, .columns + .columns:last-child {
+  float: left !important; }
 
 .clear {
   clear: both; }
@@ -36,7 +32,7 @@ p {
   -ms-user-select: none;
   user-select: none;
   position: absolute;
-  z-index: 998;
+  z-index: 999;
   top: 0;
   width: 100%;
   background-color: white;
@@ -56,8 +52,8 @@ p {
   position: fixed !important;
   top: 0;
   bottom: 0;
-  height: 80px;
-  background: white;
+  height: 105px;
+  background: rgba(255, 255, 255, 0.9);
   -webkit-animation: navigation-slidein 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -moz-animation: navigation-slidein 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-animation: navigation-slidein 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -66,21 +62,25 @@ p {
   -moz-transition: .5s all;
   -ms-transition: .5s all;
   -o-transition: .5s all;
-  transition: .5s all; }
+  transition: .5s all;
+  z-index: 999; }
 
 .nav-logo {
   display: inline;
   position: absolute;
   right: 850px;
   width: 80px;
-  margin-top: 20px; }
+  margin-top: 25px; }
 
 .nav-logo.active {
   display: inline;
   position: absolute;
   left: 45px;
   width: 80px;
-  margin-top: 20px; }
+  margin-top: 32.5px; }
+
+.nav-items.active {
+  line-height: 105px; }
 
 nav ul {
   display: inline-block;
@@ -89,7 +89,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  line-height: 80px;
+  line-height: 80px !important;
   margin: 0 20px; }
 
 nav ul li a {
@@ -298,6 +298,14 @@ nav ul li a:hover {
   -o-transition: .5s all;
   transition: .5s all; }
 
+.whatwedo-cover:hover ~ .items-icon .icon-color-2 {
+  fill: white !important;
+  -webkit-transition: .5s all;
+  -moz-transition: .5s all;
+  -ms-transition: .5s all;
+  -o-transition: .5s all;
+  transition: .5s all; }
+
 .whatwedo-cover:hover ~ .items-heading {
   margin-top: 280px;
   -webkit-transition: .5s all;
@@ -403,3 +411,274 @@ nav ul li a:hover {
   color: #FCAD56;
   font-size: 1.3em;
   line-height: 21px; }
+
+.portfolio-header {
+  height: auto;
+  background-color: #E84646; }
+
+.portfolio-header h1 {
+  padding: 30px 0;
+  text-align: center;
+  font-family: "ProximaNovaSoft-regular";
+  color: #FFFFFF;
+  font-size: 24px; }
+
+.portfolio {
+  height: 80%;
+  width: 100%;
+  position: relative; }
+
+.portfolio-items {
+  background-color: #FFFFFF;
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%; }
+
+.item-sidebar {
+  height: 121%;
+  width: 70%;
+  margin-left: -100px;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: -12%;
+  left: 0;
+  z-index: 99; }
+
+.item-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 70%;
+  z-index: 997; }
+
+.item-info h1 {
+  text-align: left;
+  margin-left: 12.5%;
+  margin-top: 250px;
+  color: #E84646;
+  font-family: "ProximaNovaSoft-Semibold";
+  font-size: 3.5em;
+  line-height: 0.6; }
+
+.slash {
+  color: #FCAD56;
+  font-family: "Source Sans Pro", sans-serif;
+  text-shadow: 3px 0px 0px #fcad56;
+  padding-bottom: 20px;
+  position: absolute;
+  left: 10%;
+  margin-top: -4px; }
+
+.item-info p {
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 15px;
+  color: #C6C6C6; }
+
+.text-portfolio {
+  margin-top: 20px;
+  width: 70%;
+  color: #434343 !important;
+  font-weight: 300; }
+
+.view-site {
+  margin-left: 10%;
+  margin-top: 40px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #FFFFFF;
+  border: 3px solid #E84646;
+  color: #E84646;
+  font-family: "ProximaNovaSoft-regular";
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all; }
+
+.view-site:hover {
+  background-color: #E84646;
+  color: #FFFFFF;
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all; }
+
+.view-site img {
+  width: 6px;
+  margin-left: 10px;
+  margin-top: -2px; }
+
+.view-case {
+  margin-left: 5px;
+  margin-top: 40px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #FFFFFF;
+  border: 3px solid #f4f4f4;
+  color: #C6C6C6;
+  font-family: "ProximaNovaSoft-regular";
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all; }
+
+.view-case:hover {
+  background-color: white;
+  color: #c6c6c6;
+  border: solid 3px #E84646;
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all; }
+
+.view-case img {
+  width: 6px;
+  margin-left: 10px;
+  margin-top: -2px; }
+
+.picture-box {
+  top: -10%;
+  width: 40%;
+  height: 150%;
+  position: absolute;
+  right: -5%;
+  background-color: red;
+  -webkit-transform: rotate(7deg);
+  -moz-transform: rotate(7deg);
+  -o-transform: rotate(7deg);
+  transform: rotate(7deg);
+  z-index: 997;
+  overflow: hidden; }
+
+.picture-box img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg);
+  -o-transform: rotate(-7deg);
+  transform: rotate(-7deg);
+  margin-left: -10%; }
+
+.next-project {
+  background-color: white;
+  padding: 20px 60px 20px 20px;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 40%;
+  right: -145px;
+  z-index: 999;
+  border: solid 3px #E84646;
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all; }
+
+.next-project:hover {
+  right: -35px;
+  background-color: #E84646;
+  color: white !important;
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all; }
+
+.next-project a {
+  color: white;
+  text-align: center;
+  font-family: "ProximaNovaSoft-regular"; }
+
+.next-project img {
+  width: 8px;
+  margin-right: 20px;
+  margin-top: -3px; }
+
+.showcase {
+  margin-top: 100px;
+  height: 127px;
+  overflow: hidden; }
+
+.showcase:hover .showcase-logos {
+  margin-top: -127px;
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all; }
+
+.showcase-logos {
+  background-color: #f4f4f4;
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all; }
+
+.showcase-logos ul {
+  display: table;
+  max-width: 1400px;
+  margin: 0 auto; }
+
+.showcase-logos ul li {
+  display: inline; }
+
+.showcase-logos img {
+  width: 120px;
+  padding: 30px 0;
+  margin: 0 80px; }
+
+.showcase-projects {
+  padding: 40px 0;
+  background-color: #FCAD56;
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all; }
+
+.showcase-projects a {
+  color: #E84646;
+  background-color: white;
+  font-family: "ProximaNovaSoft-regular";
+  font-size: 1em;
+  border: solid 3px white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-align: center;
+  max-width: 200px;
+  margin: 0 auto;
+  display: block; }
+
+.showcase-projects a:hover {
+  background-color: white;
+  color: #E84646;
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all; }
+
+.showcase-projects img {
+  width: 6px;
+  margin-left: 10px; }
+
+.contact-header {
+  height: auto;
+  background-color: white; }
+
+.contact-header h1 {
+  padding: 30px 0;
+  text-align: center;
+  font-family: "ProximaNovaSoft-regular";
+  color: #E84646;
+  font-size: 24px; }
