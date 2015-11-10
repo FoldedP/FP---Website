@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Varela+Round);
 @import url("//hello.myfonts.net/count/25b8af");
 html {
@@ -251,7 +252,7 @@ nav ul li a:hover {
   height: 300px;
   overflow: hidden;
   margin: 0;
-  border: solid .5px #F4F4F4;
+  border: solid 1px #F4F4F4;
   background-color: #E84646;
   box-sizing: border-box; }
 
@@ -546,10 +547,11 @@ nav ul li a:hover {
   -o-transform: rotate(7deg); }
 
 .sidebar-portfolio-right img {
+  position: relative;
   object-fit: cover;
   height: 100%;
-  width: 115%;
-  margin-right: 10%;
+  width: 120%;
+  left: -5%;
   -webkit-transform: rotate(-7deg);
   -moz-transform: rotate(-7deg);
   -o-transform: rotate(-7deg);
@@ -624,11 +626,6 @@ nav ul li a:hover {
 
 .showcase-projects a {
   color: #E84646;
-  -webkit-transition: .2s all;
-  -moz-transition: .2s all;
-  -ms-transition: .2s all;
-  -o-transition: .2s all;
-  transition: .2s all;
   background-color: white;
   font-family: "ProximaNovaSoft-regular";
   font-size: 1em;
@@ -647,8 +644,7 @@ nav ul li a:hover {
   -moz-transition: .2s all;
   -ms-transition: .2s all;
   -o-transition: .2s all;
-  transition: .2s all;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); }
+  transition: .2s all; }
 
 .showcase-projects img {
   width: 6px;
@@ -665,9 +661,23 @@ nav ul li a:hover {
   color: #E84646;
   font-size: 24px; }
 
+​
+.contact-header {
+  height: auto;
+  background-color: white; }
+
+.contact-header h1 {
+  padding: 30px 0;
+  text-align: center;
+  font-family: "ProximaNovaSoft-regular";
+  color: #E84646;
+  font-size: 24px; }
+
+​
 .contact-section {
   background-color: white; }
 
+​
 .contactform {
   max-width: 1024px;
   margin: 0 auto; }
@@ -697,3 +707,34 @@ nav ul li a:hover {
 
 .contactform p input[type="text"]:active {
   background-color: transparent; }
+
+.back-home {
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 30px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #FFFFFF;
+  border: 3px solid #E84646;
+  color: #E84646;
+  font-family: "ProximaNovaSoft-regular";
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all; }
+
+.back-home img {
+  width: 6px;
+  margin-right: 10px;
+  margin-top: -2px; }
+
+.back-home:hover {
+  background-color: #FCAD56;
+  color: #FFFFFF;
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all; }
