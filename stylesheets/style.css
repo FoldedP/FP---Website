@@ -624,6 +624,11 @@ nav ul li a:hover {
 
 .showcase-projects a {
   color: #E84646;
+  -webkit-transition: .2s all;
+  -moz-transition: .2s all;
+  -ms-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all;
   background-color: white;
   font-family: "ProximaNovaSoft-regular";
   font-size: 1em;
@@ -642,7 +647,8 @@ nav ul li a:hover {
   -moz-transition: .2s all;
   -ms-transition: .2s all;
   -o-transition: .2s all;
-  transition: .2s all; }
+  transition: .2s all;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); }
 
 .showcase-projects img {
   width: 6px;
@@ -658,3 +664,36 @@ nav ul li a:hover {
   font-family: "ProximaNovaSoft-regular";
   color: #E84646;
   font-size: 24px; }
+
+.contact-section {
+  background-color: white; }
+
+.contactform {
+  max-width: 1024px;
+  margin: 0 auto; }
+
+.contactform p {
+  text-align: center;
+  color: #434343;
+  font-weight: 300;
+  line-height: 16px; }
+
+.contactform p input[type="text"] {
+  display: inline;
+  background-color: transparent;
+  height: auto;
+  padding: 0 !important;
+  margin: 0 5px !important;
+  width: auto;
+  text-align: center;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: #E84646;
+  font-weight: 700; }
+
+.contactform p input[type="text"]:hover {
+  background-color: transparent; }
+
+.contactform p input[type="text"]:active {
+  background-color: transparent; }
