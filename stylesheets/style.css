@@ -738,3 +738,163 @@ nav ul li a:hover {
   -ms-transition: .2s all;
   -o-transition: .2s all;
   transition: .2s all; }
+
+.item-header {
+  position: relative;
+  min-width: 100%;
+  width: 100%; }
+
+.case-info h1 {
+  text-align: center;
+  margin-top: 70px;
+  font-family: "ProximaNovaSoft-Semibold";
+  color: #E84646; }
+
+.case-info {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center; }
+
+.case-info p {
+  color: #434343;
+  margin-top: 30px; }
+
+.no-margin {
+  margin: 0 !important;
+  padding: 0; }
+
+.case-explain {
+  padding-bottom: 150px; }
+
+.case-explain h2 {
+  margin-top: 40px;
+  margin-bottom: 0;
+  font-size: 2em;
+  color: #FCAD56; }
+
+.sidebar-case {
+  position: relative;
+  padding: 20px 0; }
+
+.sidebar-case-text-left {
+  height: 100%;
+  position: relative;
+  margin-top: 150px; }
+
+.sidebar-case-text-left h1 {
+  text-align: left;
+  margin-top: 40px;
+  font-size: 2.5em;
+  font-family: "ProximaNovaSoft-Semibold";
+  color: #E84646;
+  width: 75%;
+  margin: 0 auto; }
+
+.sidebar-case-text-left p {
+  text-align: left;
+  color: #434343;
+  width: 75%;
+  margin: 0 auto; }
+
+.sidebar-case-picture-right {
+  height: 100%;
+  position: relative;
+  float: left; }
+
+.sidebar-case-picture-right img {
+  height: 500px;
+  max-width: 650px;
+  width: 100%;
+  background-color: lightgray;
+  float: right;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2); }
+
+.sidebar-case-text-right {
+  height: 100%;
+  position: relative;
+  margin-top: 150px; }
+
+.sidebar-case-text-right h1 {
+  text-align: left;
+  margin-top: 40px;
+  font-size: 2.5em;
+  font-family: "ProximaNovaSoft-Semibold";
+  color: #E84646;
+  width: 75%;
+  margin: 0 auto; }
+
+.sidebar-case-text-right p {
+  text-align: left;
+  color: #434343;
+  width: 75%;
+  margin: 0 auto; }
+
+.sidebar-case-picture-left {
+  height: 100%;
+  position: relative;
+  float: left; }
+
+.sidebar-case-picture-left img {
+  height: 500px;
+  max-width: 650px;
+  width: 100%;
+  background-color: lightgray;
+  float: left;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2); }
+
+.showcase-projects.detail {
+  background-color: none; }
+
+.background-recensie {
+  background-color: #FCAD56; }
+
+.case-recensie {
+  width: 40%;
+  padding: 60px 0;
+  margin: 0 auto;
+  float: none; }
+
+.recensie {
+  text-align: left;
+  margin: 0 auto; }
+
+.recensie h3 {
+  color: white;
+  text-align: center;
+  font-family: "ProximaNovaSoft-Semibold"; }
+
+.recensie p {
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: italic; }
+
+.recensie hr {
+  width: 75%;
+  border: none;
+  border-bottom: solid 3px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  margin: 0 auto; }
+
+.more-items {
+  position: relative; }
+
+.previous-item {
+  float: left;
+  width: 50%;
+  background-color: lightgray;
+  padding: 40px 0; }
+
+.previous-item h1 {
+  text-align: center;
+  font-size: 2em; }
+
+.next-item {
+  float: left;
+  width: 50%;
+  padding: 40px 0; }
+
+.next-item h1 {
+  text-align: center;
+  font-size: 2em; }
